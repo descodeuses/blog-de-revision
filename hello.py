@@ -6,4 +6,7 @@ app = Flask(__name__)
 @app.route("/")
 def hello_world():
     return render_template('hello.html')
-    return "<p>Hello, World!</p>"
+
+@app.route("/nouveau_billet")
+def nouveau_billet():
+    return render_template('formulaire_billet.html')
