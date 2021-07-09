@@ -10,3 +10,20 @@ Créer un blog avec
 L'idée sera de réviser l'architecture multicouche (organisation d'une application web).
 
 
+## Developpement
+
+Utilisation de Python3
+
+`python3 -m venv venv` pour initialiser un environnement virtuel python de travail.
+
+`pip install Flask` pour installer le framework Flask
+
+
+Pour lancer le serveur
+
+```bash
+. venv/bin/activate
+export FLASK_APP=hello
+flask run
+```
+
