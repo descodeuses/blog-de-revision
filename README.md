@@ -31,3 +31,5 @@ flask run
 ## Notes
 
 La page [des codes retour HTTP sur Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
+
+Page wikipédia sur les api [REST](https://fr.wikipedia.org/wiki/Representational_state_transfer)

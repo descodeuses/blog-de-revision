@@ -39,6 +39,40 @@
    </form>
  </section>
 
+ <section>
+  <h1>Formulaire avec JavaScript</h1>
+ <form action="/ajoute_billet" id="formWithJavaScript">
+   <p>
+     <label for="titre">Titre</label>
+     <input name="titre">
+   </p>
+   <p>
+     <label for="contenue">Contenu</label>
+     <textarea name="contenu"></textarea>
+   </p>
+   <input type="submit" id="submitForm">
+ </form>
+</section>
 
+<script>
+  let submitForm = document.getElementById("submitForm")
+  submitForm.addEventListener("click", function (evenement) {
+    evenement.preventDefault();
+    console.log(evenement, "click !")
+
+    // https://developer.mozilla.org/fr/docs/Web/Guide/AJAX/Getting_Started
+    httpRequest = new XMLHttpRequest();
+    httpRequest.open('GET', '/ajoute_billet');
+    httpRequest.send();
+    httpRequest.onreadystatechange = function() {
+      if (httpRequest.readyState === XMLHttpRequest.DONE) {
+        // instructions de traitement de la réponse
+        console.log("dans onreadystatechange ", httpRequest.readyState)
+        window.location = "/";
+      }
+    };
+  })
+
+</script>
 </body>
 </html>
