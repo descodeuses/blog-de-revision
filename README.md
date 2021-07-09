@@ -27,3 +27,7 @@ export FLASK_APP=hello
 flask run
 ```
 
+
+## Notes
+
+La page [des codes retour HTTP sur Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)

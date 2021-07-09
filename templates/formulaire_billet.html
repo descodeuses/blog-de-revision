@@ -8,17 +8,37 @@
 </head>
 <body>
   <h1>Formulaire billet</h1>
+  <p>pensé à regarder le traffic réseau avec la console web pour voir les différences entre les verbes (méthode) HTTP</p>
+  <section>
+     <h1>Formulaire avec POST</h1>
+    <form action="/ajoute_billet" method="post">
+      <p>
+        <label for="titre">Titre</label>
+        <input name="titre">
+      </p>
+      <p>
+        <label for="contenue">Contenu</label>
+        <textarea name="contenu"></textarea>
+      </p>
+      <input type="submit">
+    </form>
+  </section>
 
-  <form action="/ajoute_billet">
-    <p>
-      <label for="titre">Titre</label>
-      <input name="titre">
-    </p>
-    <p>
-      <label for="contenue">Contenu</label>
-      <textarea name="contenu"></textarea>
-    </p>
-    <input type="submit">
-  </form>
+  <section>
+    <h1>Formulaire avec GET</h1>
+   <form action="/ajoute_billet" method="get">
+     <p>
+       <label for="titre">Titre</label>
+       <input name="titre">
+     </p>
+     <p>
+       <label for="contenue">Contenu</label>
+       <textarea name="contenu"></textarea>
+     </p>
+     <input type="submit">
+   </form>
+ </section>
+
+
 </body>
 </html>
