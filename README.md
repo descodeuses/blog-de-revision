@@ -24,7 +24,15 @@ Pour lancer le serveur
 ```bash
 . venv/bin/activate
 export FLASK_APP=hello
-flask run
+flask run --reload
+```
+
+Pour lancer l'application API
+
+```bash
+. venv/bin/activate # si nécessaire
+export FLASK_APP=hellapi
+flask run --reload
 ```
 
 
