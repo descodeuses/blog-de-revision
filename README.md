@@ -66,4 +66,3 @@ Pour explorer les API, le serveur FLASK est des requêtes avec Curl auraient suf
 
 L'api est à partir de la ligne 25 du fichier hellapi.py. Tous le JS et le HTML qui a été ajouté sont là pour « tester » l'API.
 
-
