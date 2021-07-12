@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
-    return render_template('base_hellapi.html')
+    return render_template('base_hellapi.html', js_file=url_for('static', filename='hellapi.js'))
 
 @app.route("/nouveau_billet")
 def nouveau_billet():
