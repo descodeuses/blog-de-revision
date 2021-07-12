@@ -9,7 +9,7 @@ http://monserveur/billets GET
 
 // https://developer.mozilla.org/fr/docs/Web/Guide/AJAX/Getting_Started
 httpRequest = new XMLHttpRequest();
-httpRequest.open('GET', '/billets');
+httpRequest.open('GET', '/api/billets');
 httpRequest.send();
 httpRequest.onreadystatechange = function() {
   if (httpRequest.readyState === XMLHttpRequest.DONE) {
@@ -19,9 +19,11 @@ httpRequest.onreadystatechange = function() {
     let ol = document.createElement("ol")
     billets.forEach(function(billet) {
       let li = document.createElement("li")
-      console.log(billet)
+      let link = document.createElement("a")
+      link.setAttribute("href", "/billet/" + billet.id)
       let content = document.createTextNode(billet.title)
-      li.appendChild(content)
+      link.appendChild(content)
+      li.appendChild(link)
       ol.appendChild(li)
     })
     document.getElementById("list-billets").appendChild(ol)

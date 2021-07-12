@@ -41,3 +41,7 @@ flask run --reload
 La page [des codes retour HTTP sur Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
 
 Page wikipédia sur les api [REST](https://fr.wikipedia.org/wiki/Representational_state_transfer)
+
+https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop
+
+https://replit.com/
